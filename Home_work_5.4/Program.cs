@@ -10,10 +10,13 @@ namespace Home_work_5._4
             // 3, 5-> 243(3⁵)
             // 2, 4-> 16
 
-            int[] array = new int[2];
-            enterArray();                        
-            Console.WriteLine($"Число: {array[0]} в степени: {array[1]} равно: {Math.Pow(array[0], array[1])}");
-
+            int[] array = { 0, 0 };
+            enterArray();
+            if (array[0] > 0 || array[1] > 0)
+                Console.WriteLine($"Число: {array[0]} в степени: {array[1]} равно: {Math.Pow(array[0], array[1])}");
+            else
+                Console.WriteLine("Некорректный ввод! Введенные значения должны быть больше '0'! Программа завершает работу!");
+           
             void enterArray()
             {
                 for (int i = 0; i < 2; i++)
@@ -33,3 +36,4 @@ namespace Home_work_5._4
         }
     }
 }
+
