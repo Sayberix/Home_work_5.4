@@ -10,8 +10,21 @@ namespace Home_work_5._4
             // 3, 5-> 243(3⁵)
             // 2, 4-> 16
 
-
-            
+            int[] array = new int[2];
+            for (int i = 0; i < 2; i++)
+            {
+                if (i == 0)
+                {
+                    Console.WriteLine("Введите значение, которое будет возводится в степень: ");
+                    array[i] = Convert.ToInt32(Console.ReadLine());
+                }
+                if (i == 1)
+                {
+                    Console.WriteLine("Введите степень, в которую возведется предыдущее введеное значение: ");
+                    array[i] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+            Console.WriteLine($"Число: {array[0]} в степени: {array[1]} равно: {Math.Pow(array[0], array[1])}");
         }
     }
 }
