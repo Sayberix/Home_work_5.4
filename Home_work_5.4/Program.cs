@@ -11,8 +11,8 @@ namespace Home_work_5._4
             //6, 1, 33-> [6, 1, 33]
 
             int[] array = new int[8];
-            fillArray(array);
-            showArray(array);
+            fillArray(array);           // Функция заполнения массива случайными числами
+            showArray(array);           // Функция выводит элементы массива в цикле
 
             void fillArray (int [] array)
             {
